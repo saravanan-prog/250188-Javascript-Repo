@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Input - event </title>
+    </head>
+    <body>
+        <div class="container">
+            <input type="text" 
+            onchange = "
+                document.getElementById('result').innerText = `You Typed text is ${event.target.value}` 
+            ">
+        </div>
+        <div class="container">
+            <input 
+                type="checkbox" 
+                name="lang"
+                value="tamil" 
+                onchange = "
+                    document.getElementById('result').innerText = `Your current Language is ${event.target.value}` 
+                "
+            >Tamil
+            <input 
+                type="checkbox" 
+                name="lang" 
+                value="english"
+                onchange = "
+                   document.getElementById('result').innerText = `Your current Language is ${event.target.value}` 
+                "
+            >English
+            <input 
+                type="checkbox" 
+                name="lang" 
+                value="telugu"
+                onchange = "
+                document.getElementById('result').innerText = `Your current Language is ${event.target.value}` 
+                "
+            >Telugu
+        </div>
+        <div class="gender-container">
+             <input 
+                type="radio" 
+                name="gender"
+                value="male" 
+                onchange = "
+                    document.getElementById('result').innerText = `you have choosed ${event.target.value}`
+                    "
+            >Male
+
+            <input 
+                type="radio" 
+                name="gender"
+                value="female" 
+                onchange = "document.getElementById('result').innerText = `you have choosed ${event.target.value}`  "
+            >Female
+        </div>
+        <p id="result"></p>
+    </body>
+</html>
