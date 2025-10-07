@@ -1,0 +1,38 @@
+<html>
+    <head>
+         <title>Menu </title>
+    </head>
+    <body>
+        <p id="home" onclick="selectHomeMenu()" onmouseover="higlight()" onmouseleave="">Home</p>
+        <p id="about" onclick="selectAboutMenu()">About</p>
+       
+    </body>
+     <style>
+         .active{
+            background-color: brown;
+            color:white
+         }
+     </style>
+    <script>
+         var home = document.getElementById("home")
+         var about = document.getElementById("about")
+
+        function selectHomeMenu(){
+            about.classList.remove('active')
+            home.classList.add("active")
+        }
+        function selectAboutMenu(){
+           
+            home.classList.remove("active")
+            about.classList.add('active')
+        }
+
+        function higlight(){
+            console.log("highlight is triggred")
+        }
+
+      
+
+
+    </script>
+</html

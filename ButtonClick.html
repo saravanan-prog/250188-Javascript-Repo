@@ -3,7 +3,7 @@
         <title>Button - event - bulp</title>
     </head>
     <body>
-        <button onclick="document.getElementById('bulp').src='./images/bulpon1.jpeg' ">
+        <button onclick="bulpON()">
             Bulp ON
         </button>
             <img 
@@ -13,8 +13,24 @@
                 width="100" 
                 id = "bulp"
             />
-        <button onclick="document.getElementById('bulp').src='./images/bulpoff.jpeg'  ">
+        <button onclick="bulpOFF()">
             Bulp OFF
         </button>
     </body>
+
+
+    <script>
+
+        function bulpON(){
+            document.getElementById('bulp').src='./images/bulpon1.jpeg'
+        }
+
+        function bulpOFF(){
+            document.getElementById('bulp').src='./images/bulpoff.jpeg'
+        }
+
+
+
+
+    </script>
 </html>

@@ -4,18 +4,28 @@
     </head>
 
     <body>
-        username :  <input type="text" id="username">
-        password : <input type="text" id="password" >
-
+      
+        <p id="demo" onClick="getReadPcontainer()">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse voluptates animi cum laboriosam debitis, ullam facilis illo, alias reiciendis nam assumenda placeat nihil minus, sapiente quo amet labore iure id.</p>
         
     </body>
 
     <script>
-         var username = document.getElementById("username")
-         var password = document.getElementById("password")
 
-         username.value = "saravanan@tcs.com"
-         password.value= "test@123"
+        function basicLogChecking(){
+           console.log("Hello Saravanan")
+           console.log("Hello Html")
+        }
+
+        function getReadPcontainer(){
+            
+            var pContainer = document.getElementById("demo")
+            console.log(demo.innerText)
+        }
+         
+       
+
+
+
 
 
     </script>

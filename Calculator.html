@@ -1,0 +1,30 @@
+<html>
+    <head>
+         <title>Calculator </title>
+    </head>
+    <body>
+
+        <div class="container calculator">
+            <div class="row">
+                 <label for="first-input" >First Input</label>
+                 <input type="text" id="first-input" onchange = "handleChange()">
+            </div>
+            <div class="row">
+                 <label for="second-input">Second Input</label>
+                 <input type="text" id="second-input"  onchange = "handleChange()">
+            </div>
+            <div class="row">
+                <h4 id="result" style="color:green"></h4>
+            </div>
+            <div class="row">
+                <button onclick="add()">ADD</button>
+                <button onclick="sub()">SUB</button>
+                <button onclick="mul()">MUL</button>
+                <button onclick="div()">DIV</button>
+                <button onclick="mod()">MOD</button>
+            </div>
+        </div>
+        
+    </body>
+    <script src="./script/Calculator.js"></script>
+</html>
