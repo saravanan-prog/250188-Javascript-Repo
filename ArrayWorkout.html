@@ -1,0 +1,32 @@
+<html>
+    <head>Array Type </head>
+    <script>
+        
+        var fruits = ["apple","orange","grapes","pineapple"]
+
+        console.log(fruits[0])
+        console.log(fruits[1])
+        console.log(fruits[2])
+        console.log(fruits[3])
+       
+        console.log("*******For loop*******")
+        //looping
+
+        for(let i=0; i<4; i++){
+            console.log(fruits[i])
+        }
+
+        console.log("****For-in-************")
+
+        for(let item in fruits){
+            console.log("item====>",fruits[item])
+        }
+
+         console.log("****For-of-************")
+        for(let item of fruits){
+            console.log("item===>",item)
+         }
+
+
+    </script>
+</html>
