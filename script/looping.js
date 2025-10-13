@@ -4,6 +4,9 @@
  *   for loop       - initialization; testconditon; increment/decrement
  *   for-in loop    - returns to keys
  *   for-of loop    - returns to values
+ * 
+ *   break
+ *   continue
  */
 
 
@@ -125,3 +128,40 @@ function forOfExample ()  {
 
 
 
+
+
+
+
+
+function LearningBreakStatement()  {
+
+    for(let i=1; i<=25; i++){
+
+        if(i==5){
+            break;
+        }
+        
+        console.log("i====>",i)
+    }
+
+}
+
+//LearningBreakStatement()
+
+
+
+
+function continueStatementLearning()  {
+
+    for(let i=1; i<=25; i++){
+
+        if(i==5 || i==7 || i==8 || i==25 ){
+            continue;
+        }
+        
+        console.log("i====>",i)
+    }
+
+}
+
+continueStatementLearning()
