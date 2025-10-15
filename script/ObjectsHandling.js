@@ -25,9 +25,14 @@ function printingObject(){
     console.log("Person work::",person['work'])
     console.log("Person city::",person['city'])
 
-    console.log("----------Read Keys ------------")
+    console.log("----------Desctcuring Objects ------------")
 
-    
+    const { name,age,work,city} = person
+
+     console.log("Person Name::", name)
+    console.log("Person Age:::", age)
+    console.log("Person work::", work)
+    console.log("Person city::", city)
 
 
 }
@@ -58,11 +63,21 @@ function multiObjectHandling(){
         }
     ]
 
+    // console.log("Person Name::",person[1].name)
+    // console.log("Person Age:::",person[1].age)
+    // console.log("Person work::",person[1].work)
+    // console.log("Person city::",person[1].city)
 
-    console.log("Person Name::",person[1].name)
-    console.log("Person Age:::",person[1].age)
-    console.log("Person work::",person[1].work)
-    console.log("Person city::",person[1].city)
+    console.log("----------Desctcuring Objects ------------")
+    
+    const {name,age,work,city} = person[1] 
+
+    console.log("Person Name::",name)
+    console.log("Person Age:::",age)
+    console.log("Person work::",work)
+    console.log("Person city::",city)
+
+
 }
 
 //multiObjectHandling()
@@ -137,16 +152,33 @@ function multiObjectHandlingwithLoop(){
 
 
     for(let i = 0; i<person.length; i++){
-        console.log("Person Name::",person[i].name)
-        console.log("Person Age:::",person[i].age)
-        console.log("Person work::",person[i].work)
-        console.log("Person city::",person[i].city)
-        console.log("Person Experice::",)
+
+        // console.log("Person Name::",person[i].name)
+        // console.log("Person Age:::",person[i].age)
+        // console.log("Person work::",person[i].work)
+        // console.log("Person city::",person[i].city)
+        // console.log("Person Experice::")
+
+        console.log("----------Desctcuring Objects ------------")
+
+        const {name,age,work,city} = person[i]
+
+        console.log("Person Name:: ",name)
+        console.log("Person Age::: ",age)
+        console.log("Person work:: ",work)
+        console.log("Person city:: ",city)
+        console.log("Person Experice::")
 
 
         for(let j=0; j<person[i].experiece.length; j++){
-            console.log("Year:",person[i].experiece[j].year)
-            console.log("Company:",person[i].experiece[j].company)
+           
+            // console.log("Year:",person[i].experiece[j].year)
+            // console.log("Company:",person[i].experiece[j].company)
+
+            
+            const {year,Company} = person[i].experiece[j]    /* Desctructring */
+            console.log("Year:",year)
+            console.log("Company:",Company)
         }
 
 
@@ -163,7 +195,7 @@ function multiObjectHandlingwithLoop(){
    
 }
 
-//multiObjectHandlingwithLoop()
+multiObjectHandlingwithLoop()
 
 
 function enhancedLoopExample(){
@@ -333,4 +365,4 @@ function typeConversation(){
 }
 
 
-typeConversation()
+// typeConversation()

@@ -2,6 +2,7 @@
  * 
  *      if - statement
  *      if -else -statement
+ *      Nested If -statement
  *      Else-if lader -statement
  *      switch statement
  */
@@ -34,7 +35,7 @@ function LearingIFElseStatement(){
          console.log("Yes he is saravanan")
      }
      else{
-        console.log("I think he is not aravanan")
+        console.log("I think he is not saravanan")
      }
 
      console.log("end")
