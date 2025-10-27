@@ -168,12 +168,62 @@ function getFullName(){
 
     }
 
-    console.log(person.fullName())
-    console.log(person.address())
+    // console.log(person.fullName())
+    // console.log(person.address())
 
 }
 
-getFullName()
+//getFullName()
+
+
+
+
+
+
+
+/* Time Out  */
+
+function timeoutFunctionLearning(){
+
+    console.log("First")
+    console.log("second")
+    console.log("third")
+
+    setTimeout(()=>{
+      console.log("Fourth")  
+      console.log("Fifth")
+    },5000)
+
+    console.log("SIX")
+    console.log("seven")
+
+
+
+}
+
+//timeoutFunctionLearning()
+
+
+
+function IntervalConcept(){
+
+    setInterval(()=>{
+      console.log("Hello Welcome to Savananan")  
+    },5000)
+
+}
+
+//IntervalConcept()
+
+
+
+
+
+
+
+
+
+
 
 
 
