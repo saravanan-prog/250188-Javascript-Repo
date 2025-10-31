@@ -15,4 +15,36 @@ async function apicallChecking(){
     console.log("responseData====>",responseData)
 }
 
-apicallChecking()
+//apicallChecking()
+
+
+
+async function productList(){
+
+    let url = "https://fakestoreapi.com/products"
+
+    let option = {
+
+        method:"GET",
+        headers: {
+            "accept":"application/json",
+            "content-type":"application/json"
+        }
+
+    }
+
+    let response = await fetch(url,option)
+    let responseData =  await response.json()
+
+
+    console.log("Product List ===>",responseData)
+
+
+
+
+
+
+}
+
+
+productList()
