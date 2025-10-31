@@ -41,10 +41,6 @@ let offer = Promise.resolve("Flat 50% Avail");
 //  offer.then((data)=> console.log("data===>",data))
 
 
-
-
-
-
 /* problem - 1 */
 function addition() {
   let a = 10;
@@ -89,14 +85,15 @@ function voterResult(result) {
   console.log("Your are ====>", result);
 }
 
-voterCheck(3).then(
-    (result) => {
-         voterResult(result)
-    }
-)
-.catch((error)=> {
-    console.log("Facing issue==>",error)
-})
+// voterCheck(3).then(
+//     (result) => {
+//          voterResult(result)
+//     },
+//     (error)=> console.log(error)
+// )
+// .catch((error)=> {
+//     console.log("Facing issue==>",error)
+// })
 
 
 
@@ -110,24 +107,32 @@ voterCheck(3).then(
 /* problem -3 */
 
 function Product() {
+
   let product = ["apple", "orange", "mango"];
+
   let result = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(product);
     }, 8000);
   });
+
   return result;
 }
 
+
 function isOffer(product) {
-  console.log("OFFER 50%===>", product);
+
+
+  return Promise.resolve( product)
 }
+
+
 function checkPromocode(code) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (code === "Fruit100") resolve("valid");
       else reject("Not-valid");
-    }, 8000);
+    }, 15000);
   });
 }
 function Billing(promocodeStatus) {
@@ -136,15 +141,18 @@ function Billing(promocodeStatus) {
   console.log("finalPrice", finalPrice);
 }
 
-// Product().then(
-//     (data)=> {
 
-//         isOffer(data)
-//         checkPromocode('Fruit101').then(
-//             (data)=> Billing(data),
-//             (errordata) => Billing(errordata)
-
-//         )
-//     },
-//     ()=>{}
+// Promise.all([isOffer(Product())]).then(
+//    (data) => console.log("Product data",data)
 // )
+
+
+
+  
+
+  
+  
+
+
+
+
